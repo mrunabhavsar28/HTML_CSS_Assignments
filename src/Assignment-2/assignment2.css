@@ -1,7 +1,102 @@
-/* Our CSS file. */
+.main-body{
+    border: 1px solid black;
+    width: 100%;
+    height: 750px;
+    padding: 3px;
+}
+.first-part{
+    display: flex;
+    background: rgb(161, 213, 223);
+    border: 1px solid black;
+
+    flex-direction: row;
+    height: 100px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.item:nth-child(2){
+    margin-top: 40px;
+}
+.item:nth-child(1){
+    margin:25px 0px 0px 20px;
+}
 
 
-.container, .content {
-width: 100%;
-height: 100%;
+.second-part{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.second-part .nav{
+    display: flex;
+    border: 1px solid black;
+    background: rgb(191, 202, 223);
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    margin-top: 10px 10px 0px 10px;
+}
+.second-part .nav .nav-link{
+    /* margin:20px 40px 0px 40px; */
+    flex-basis: 25%;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+.left-section{
+    border: 1px solid black;
+    height: 370px;
+    flex-basis: 10%;
+    margin: 10px 10px 0px 10px ;
+    padding: 10px;
+    
+}
+.left-section:nth-child(2){
+    flex-grow:1;
+}
+
+/* START MID */
+.post-img{
+    display: block;
+    float: left;
+    width: 30%;
+    padding: 2px;
+    margin-left: 2%;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+.left-section img{
+        width: 100%;
+        height: 176px;
+        border-radius: 10px;
+}
+.left-section img:hover{
+    transform: scale(2,2);
+    transition: .3s ;
+    border-radius: 5px;
+}
+
+/* END MID */
+
+
+.footer{
+    display: flex;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    height: 120px;
 }
